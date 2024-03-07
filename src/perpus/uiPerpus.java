@@ -77,10 +77,4 @@ public class uiPerpus {
     }
 }
 
-//else if (input == 8) {
-//        int jumlah = 0;
-//        jumlah += perpus.banyakBuku(perpus.getFiksi()) + perpus.banyakBuku(perpus.getFilsafat()) + perpus.banyakBuku(perpus.getPolitik()) + perpus.banyakBuku(perpus.getTeknologi()) + perpus.banyakBuku(perpus.getSejarah()) + perpus.banyakBuku(perpus.getPsikologi()) + perpus.banyakBuku(perpus.getAgama());
-//        System.out.println("Jumlah total buku: " + jumlah + "\n");
-//        }
-
 
