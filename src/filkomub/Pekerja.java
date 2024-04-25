@@ -1,26 +1,40 @@
 package filkomub;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 
 public class Pekerja extends Manusia {
     private double gaji;
-    private int tahunMasuk;
-    private int bulanMasuk;
-    private int tanggalMasuk;
+    private LocalDate tahun;
     private int jumlahAnak;
 
     public Pekerja(double gaji, int tahunMasuk, int bulanMasuk, int tanggalMasuk, int jumlahAnak, String nama, String nik, boolean jenisKelamin, boolean menikah) {
         super(nama, nik, jenisKelamin, menikah);
         this.gaji = gaji;
-        this.tahunMasuk = tahunMasuk;
-        this.bulanMasuk = bulanMasuk;
-        this.tanggalMasuk = tanggalMasuk;
+        this.tahun = LocalDate.of(tahunMasuk, bulanMasuk, tanggalMasuk);
         this.jumlahAnak = jumlahAnak;
     }
     public double getGaji() {
-            return gaji;
-        }
+        return gaji;
+    }
+    public void setGaji(double gaji) {
+        this.gaji = gaji;
+    }
+    public LocalDate getTahun() {
+        return tahun;
+    }
+    public void setTahun(LocalDate tahunMasuk) {
+        this.tahun = tahunMasuk;
+    }
+    public int getJumlahAnak() {
+        return jumlahAnak;
+    }
+    public void setJumlahAnak(int jumlahAnak) {
+        this.jumlahAnak = jumlahAnak;
+    }
         public double getBonus() {
-            int lamaKerja = 2024 - tahunMasuk;
+            int lamaKerja = LocalDate.now().getYear() - tahun.getYear();
             if (lamaKerja <= 5) {
                 return gaji * 0.05;
             } else if (lamaKerja <= 10) {
@@ -38,7 +52,7 @@ public class Pekerja extends Manusia {
         @Override
         public String toString() {
             return super.toString() +
-                    "Tahun Masuk    : " + tahunMasuk + "\n" +
+                    "Tahun Masuk    : " + tahun + "\n" +
                     "Jumlah Anak    : " + jumlahAnak + "\n" +
                     "Gaji           : $" + gaji + "\n";
         }
