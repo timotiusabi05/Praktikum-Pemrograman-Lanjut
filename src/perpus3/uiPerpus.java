@@ -30,7 +30,7 @@ public class uiPerpus {
                 if (input >= 1 && input <= 7) {
                     break;
                 } else {
-                    System.out.println("Silakan masukkan kode kategori yang valid!");
+                    System.out.println("Silakan masukkan angka 1 atau 2!");
                     System.out.println();
                 }
             }
