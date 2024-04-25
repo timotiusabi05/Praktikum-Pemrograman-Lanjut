@@ -31,7 +31,7 @@ public class Main {
 
         System.out.println("\n3. Pekerja:");
         System.out.println("a. Lama bekerja 2 tahun, anak 2:");
-        Pekerja pekerjaBaru = new Pekerja(1200, 2020, 4, 7, 4, "Kim Mingyu", "327509817622276", true, true);
+        Pekerja pekerjaBaru = new Pekerja(1200, 2020, 4, 7, 2, "Kim Mingyu", "327509817622276", true, true);
         System.out.println(pekerjaBaru);
 
         System.out.println("\nb. Lama bekerja 9 tahun:");
