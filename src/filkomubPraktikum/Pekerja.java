@@ -1,7 +1,6 @@
-package filkomub;
+package filkomubPraktikum;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 
 
 public class Pekerja extends Manusia {

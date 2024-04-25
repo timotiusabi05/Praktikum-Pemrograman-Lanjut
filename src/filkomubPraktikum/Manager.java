@@ -1,4 +1,4 @@
-package filkomub;
+package filkomubPraktikum;
 
 
 public class Manager extends Pekerja {

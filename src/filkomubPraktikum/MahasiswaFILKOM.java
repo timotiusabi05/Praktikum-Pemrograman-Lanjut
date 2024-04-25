@@ -1,4 +1,4 @@
-package filkomub;
+package filkomubPraktikum;
 
 
 public class MahasiswaFILKOM extends Manusia {
