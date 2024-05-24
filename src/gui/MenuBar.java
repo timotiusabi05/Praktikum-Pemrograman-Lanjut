@@ -25,7 +25,6 @@ public class MenuBar extends JMenuBar {
         edit.add(cut);
         help.add(about);
 
-        close.setEnabled(false);
 
         add(file);
         add(edit);
